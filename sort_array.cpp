@@ -7,16 +7,15 @@
 //
 
 #include <iostream>
-
 using namespace std;
-
-void printmessage()
-{
-    cout << "I'm a function that prints a message!";
-}
-
 
 int main()
 {
-    printmessage();
+    int array[] = {1, 2, 3, 4, 5};
+    size_t n = sizeof(array) / sizeof(array[0]);
+    
+    for(size_t i = 0; i < n; i ++) {
+        cout << array [i] << ' ';
+    }
+    return 0;
 }
