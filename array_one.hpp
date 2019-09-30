@@ -15,7 +15,7 @@
 
 using namespace std;
 
-int main(void)
+void array_one()
 {
     int array_one[] = {5, 4, 3, 2, 1};
 }
