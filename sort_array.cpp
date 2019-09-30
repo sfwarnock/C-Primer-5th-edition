@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "array_one.hpp"
 using namespace std;
 
 int main()
