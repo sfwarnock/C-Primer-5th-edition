@@ -18,6 +18,8 @@ int main()
     
     cout << "There once was a boy named " << character_Name << endl;
     cout << "He was " << character_Age << " years old" << endl;
+    
+    character_Name = "Gage";
     cout << "He liked the name " << character_Name << endl;
     cout << "But he did not like being " << character_Age << endl;
     
