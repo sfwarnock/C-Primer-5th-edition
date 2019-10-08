@@ -13,5 +13,13 @@ using namespace std;
 int main()
 {
     
+    int zips[5] = {87555, 87131, 87501, 87120};
+    
+    cout << zips[2] << endl;
+    
+    zips[4] = 81435;
+    
+    cout << zips[4] << endl;
+    
     return 0;
 }
