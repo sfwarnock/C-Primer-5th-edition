@@ -21,11 +21,18 @@ int getMax(int num1, int num2){
     return result;
 }
 
-
 int getMin(int num3, int num4, int num5){
+    int minResult;
+    if(num3 <= num4 && num3 <= num5){
+        minResult = num3;
+    } else if(num4 <= num3 && num4 <= num5){
+        minResult = num4;
+    } else {
+        minResult = num5;
+    }
     
+    return minResult;
 }
-
 
 int main()
 {
