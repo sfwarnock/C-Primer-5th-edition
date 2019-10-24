@@ -1,9 +1,16 @@
 //
-//  for_calculator.cpp
-//  for_calculator
+//  main.for_calculator.cpp
 //
 //  Created by Warnock, Scott A on 10/24/19.
 //  Copyright © 2019 Warnock, Scott A. All rights reserved.
 //
 
-#include "for_calculator.hpp"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    return 0;
+}
