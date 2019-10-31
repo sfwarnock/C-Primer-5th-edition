@@ -21,8 +21,22 @@ string dayOfWeek(int dayNumber){
             dayName = "Monday";
             break;
         case 2:
-            dayname = "Tuesday";
+            dayName = "Tuesday";
+            break;
+        case 3:
+            dayName = "Wednesday";
+            break;
+        case 4:
+            dayName = "Thursday";
+            break;
+        case 5:
+            dayName = "Friday";
+            break;
+        case 6:
+            dayName = "Saturday";
     }
+    
+    return dayName;
 }
 
 
