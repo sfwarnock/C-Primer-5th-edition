@@ -39,8 +39,6 @@ string dayOfWeek(int dayNumber){
     return dayName;
 }
 
-
-
 int main()
 {
     cout << dayOfWeek(3)<< endl;
