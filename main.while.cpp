@@ -12,11 +12,11 @@ using namespace std;
 
 int main()
 {
-    int index = 6;
+    int index = 1;
     do {
         cout << index << endl;
         index++;
-    } while (index <= 5);
+    } while (index <= 39);
     
     return 0;
 }
