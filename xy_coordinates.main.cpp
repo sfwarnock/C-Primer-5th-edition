@@ -12,7 +12,12 @@ using namespace std;
 
 int main()
 {
-    double x, y, a, b, m;
+    //  y + x = n
+    //  y = mx + b
+    //  2x + 3y = 6
+    //  ax + by = n
+    
+    double x, y, a, b, m, n;
     
     return 0;
 }
