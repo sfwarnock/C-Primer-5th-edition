@@ -10,18 +10,20 @@
 
 using namespace std;
 
-int getForm(int standardForm, int slopeIntercept);{
+int getForm(){
+    
+    char standardForm, slopeIntercept;
     
     return standardFrom, slopeIntercept;
 }
 
 
-int standardFrom();{
+int standardFrom(){
     
     return stdFromResult;
 }
 
-int slopeIntercept();{
+int slopeIntercept(){
     
     return stdformResult;
 }
