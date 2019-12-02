@@ -10,6 +10,22 @@
 
 using namespace std;
 
+int getForm(int standardForm, int slopeIntercept);{
+    
+    return standardFrom, slopeIntercept;
+}
+
+
+int standardFrom();{
+    
+    return stdFromResult;
+}
+
+int slopeIntercept();{
+    
+    return stdformResult;
+}
+
 int main()
 {
     //  y + x = n
