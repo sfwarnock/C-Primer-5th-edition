@@ -10,22 +10,25 @@
 
 using namespace std;
 
-int getForm(){
+int getForm(int standardFrom, int slopeIntercept){
+    int result;
     
-    char standardForm, slopeIntercept;
+    standardFrom = 0;
+    slopeIntercept = 1;
     
-    return standardFrom, slopeIntercept;
+    return result;
+
 }
 
 
 int standardFrom(){
     
-    return stdFromResult;
+    
 }
 
 int slopeIntercept(){
     
-    return stdformResult;
+    
 }
 
 int main()
