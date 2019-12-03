@@ -16,6 +16,15 @@ int getForm(int standardFrom, int slopeIntercept){
     standardFrom = 0;
     slopeIntercept = 1;
     
+    cout << "Press '1' for Standard Form" << endl;
+    cout << "Press '2' for Slope Intercept Form" << endl;
+    
+    if (standardFrom < slopeIntercept){
+        result = standardFrom;
+    } else {
+        result = slopeIntercept;
+    }
+    
     return result;
 
 }
