@@ -19,10 +19,16 @@ int getForm(int standardFrom, int slopeIntercept){
     cout << "Press '1' for Standard Form" << endl;
     cout << "Press '2' for Slope Intercept Form" << endl;
     
-    if (standardFrom < slopeIntercept){
+    int selected;
+    
+    cin >> selected;
+    
+    if (selected == 0){
         result = standardFrom;
-    } else {
+    } else if (selected == 1){
         result = slopeIntercept;
+    } else {
+        cout << "Invalid selection" << endl;
     }
     
     return result;
