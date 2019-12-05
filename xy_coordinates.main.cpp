@@ -25,15 +25,15 @@ int getForm(){
     
     if (selected == 1){
         result = standardFrom;
-        cout << "You selected Standard Form" << endl;
+        cout << "You selected " << selected << " Standard Form" << endl;
     } else if (selected == 2){
         result = slopeIntercept;
-        cout << "You selected Slope Intercept From" << endl;
+        cout << "You selected " << selected << "Slope Intercept From" << endl;
     } else {
         cout << "Invalid selection" << endl;
     }
     
-    return result;
+    return selected;
 
 }
 
