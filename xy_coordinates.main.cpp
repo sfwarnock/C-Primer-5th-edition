@@ -23,10 +23,12 @@ int getForm(){
     
     cin >> selected;
     
-    if (selected == 0){
+    if (selected == 1){
         result = standardFrom;
-    } else if (selected == 1){
+        cout << "You selected Standard Form" << endl;
+    } else if (selected == 2){
         result = slopeIntercept;
+        cout << "You selected Slope Intercept From" << endl;
     } else {
         cout << "Invalid selection" << endl;
     }
