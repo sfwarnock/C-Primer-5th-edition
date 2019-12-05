@@ -37,8 +37,26 @@ int getForm(){
 
 }
 
+int standardForm(){
+    int result;
+    
+    return result;
+}
+
+int slopeInterceptForm(){
+    int result;
+    
+    return result;
+}
 
 int main()
 {
     getForm();
+    if (selected == 1);{
+        standardFrom();
+    } else if (selected == 2){
+        slopeInterceptFrom();
+    }
+    
+    return 0;
 }
