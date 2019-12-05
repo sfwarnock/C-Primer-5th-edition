@@ -10,11 +10,11 @@
 
 using namespace std;
 
-int getForm(int standardFrom, int slopeIntercept){
+int getForm(){
     int result;
     
-    standardFrom = 0;
-    slopeIntercept = 1;
+    int standardFrom;
+    int slopeIntercept;
     
     cout << "Press '1' for Standard Form" << endl;
     cout << "Press '2' for Slope Intercept Form" << endl;
@@ -36,24 +36,7 @@ int getForm(int standardFrom, int slopeIntercept){
 }
 
 
-int standardFrom(){
-    
-    
-}
-
-int slopeIntercept(){
-    
-    
-}
-
 int main()
 {
-    //  y + x = n
-    //  y = mx + b
-    //  2x + 3y = 6
-    //  ax + by = n
-    
-    double x, y, a, b, m, n;
-    
-    return 0;
+    getForm();
 }
