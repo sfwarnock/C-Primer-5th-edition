@@ -7,12 +7,16 @@
 //
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-int main();
+int main(){
 
-    vector<int> rainfall;
+    vector<int> rainfall(7);
     rainfall.push_back(1);
 
+    cout<< rainfall(0);
+    
     return 0;
+}
