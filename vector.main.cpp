@@ -14,9 +14,8 @@ using namespace std;
 int main(){
 
     vector<int> rainfall(7);
-    rainfall.push_back(1);
-
-    cout<< rainfall(0);
+    
+    cout << rainfall[2];
     
     return 0;
 }
