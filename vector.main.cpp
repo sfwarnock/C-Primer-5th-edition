@@ -10,3 +10,9 @@
 
 using namespace std;
 
+int main();
+
+    vector<int> rainfall;
+    rainfall.push_back(1);
+
+    return 0;
