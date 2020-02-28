@@ -5,9 +5,8 @@
 
 
 #include<iostream>
-#include<stdio.h>
+using namespace std;
 
-int total;
 int square(int x){
     return x*x;
 }
@@ -18,7 +17,8 @@ int squareOfSum(int x, int y){
 }
 
 int main(){
+    int total;
     int a = 4, b = 8;
     total = squareOfSum(a,b);
-    printf("output = %d", total);
+    cout<< total << endl;
 }
