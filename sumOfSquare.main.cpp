@@ -7,18 +7,18 @@
 #include<iostream>
 using namespace std;
 
-int square(int x){
-    return x*x;
+int square(int number){
+    return number * number;
 }
 
-int squareOfSum(int x, int y){
-    int z = square(x + y);
-    return z;
+int squareOfSum(int variableOne, int variableTwo){
+    int result = square(variableOne + variableTwo);
+    return result;
 }
 
 int main(){
     int total;
-    int a = 4, b = 8;
-    total = squareOfSum(a,b);
+    int inputNumberOne = 4, inputNumberTwo = 8;
+    total = squareOfSum(inputNumberOne,inputNumberTwo);
     cout<< total << endl;
 }
