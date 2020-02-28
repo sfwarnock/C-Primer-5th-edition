@@ -18,7 +18,7 @@ int squareOfSum(int x, int y){
 }
 
 int main(){
-    int a = 4, b = 4;
+    int a = 4, b = 8;
     total = squareOfSum(a,b);
     printf("output = %d", total);
 }
