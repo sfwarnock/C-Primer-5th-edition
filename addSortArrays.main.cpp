@@ -24,6 +24,5 @@ int squareSum(int sumOfArray){
 int main(){
     int indexOne = 0, indexTwo = 0;
     cout << sumArrayElements(indexOne, indexTwo) << endl;
-    cout << squareSum(sumArrayElements) << endl;
     return 0;
 }
