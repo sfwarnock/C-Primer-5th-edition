@@ -11,17 +11,19 @@ int arrayOne [5] = {2, 4, 6, 8, 10};
 int arrayTwo [5] = {1, 3, 5, 7, 9};
 vector<int> newList;
 
-int square(int number){
-    return number * number;
+int sumArrayElements(int arrayOneElement, int arrayTwoElement){
+    int arraySum = arrayOne[arrayOneElement] + arrayTwo[arrayTwoElement];
+    return arraySum;
 }
 
-int squareofsum(int variableOne, int variableTwo){
-    int result = square(variableOne + variableTwo);
-    return result;
+int squareSum(int sumOfArray){
+    int arraySquared = sumOfArray * sumOfArray;
+    return arraySquared;
 }
 
 int main(){
-    int inputNumberOne = arrayOne[0], inputNumberTwo = arrayTwo[2];
-    int total = squareofsum(inputNumberOne, inputNumberTwo);
-    cout<< total << endl;
+    int indexOne = 0, indexTwo = 0;
+    cout << sumArrayElements(indexOne, indexTwo) << endl;
+    cout << squareSum(sumArrayElements) << endl;
+    return 0;
 }
