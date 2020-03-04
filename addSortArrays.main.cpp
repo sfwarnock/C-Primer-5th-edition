@@ -16,7 +16,6 @@ int sumArrayElements(int arrayOneElement, int arrayTwoElement){
     return arraySum;
 }
 
-
 int arraySums(int result){
     for(int indexTwo = 0; indexTwo <5; indexTwo++){
         for(int indexOne = 0; indexOne <5; indexOne++){
@@ -35,5 +34,4 @@ int squareSum(int sumOfArray){
 
 int main(){
     int result = arraySums(result);
-    squareSum(result);
 }
