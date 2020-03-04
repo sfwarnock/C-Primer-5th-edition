@@ -12,15 +12,11 @@ int arrayTwo [5] = {1, 3, 5, 7, 9};
 vector<int> newList;
 
 int sumArrayElements(int arrayOneElement, int arrayTwoElement){
-    for(int arrayOneElement = 0; arrayOneElement < 5; arrayOneElement++){
-        int arraySum = arrayOne[arrayOneElement] + arrayTwo[arrayTwoElement];
-        return arraySum;
-    }
-    return 0;
+    int arraySum = arrayOne[arrayOneElement] + arrayTwo[arrayTwoElement];
+    return arraySum;
 }
 
 int squareSum(int sumOfArray){
-    
     int arraySquared = sumOfArray * sumOfArray;
     newList.insert(newList.begin(), arraySquared);
     return 0;
@@ -30,7 +26,9 @@ int main(){
     for(int i = 0; i < 5; i++){
         cout<< arrayOne[i] << endl;
     }
-    int indexOne = 0, indexTwo = 0;
-    cout << sumArrayElements(indexOne, indexTwo) << endl;
+    int indexTwo = 0;
+    for(int indexOne = 0; indexOne <5; indexOne++){
+        cout << sumArrayElements(indexOne, indexTwo) << endl;
+    }
     return 0;
 }
