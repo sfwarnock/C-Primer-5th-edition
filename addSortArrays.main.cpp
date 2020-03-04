@@ -23,12 +23,11 @@ int squareSum(int sumOfArray){
 }
 
 int main(){
-    for(int i = 0; i < 5; i++){
-        cout<< arrayOne[i] << endl;
-    }
     int indexTwo = 0;
     for(int indexOne = 0; indexOne <5; indexOne++){
-        cout << sumArrayElements(indexOne, indexTwo) << endl;
+        int result = sumArrayElements(indexOne, indexTwo);
+        squareSum(result);
+        cout << squareSum << endl;
     }
     return 0;
 }
