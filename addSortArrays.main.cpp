@@ -19,15 +19,15 @@ int sumArrayElements(int arrayOneElement, int arrayTwoElement){
 int squareSum(int sumOfArray){
     int arraySquared = sumOfArray * sumOfArray;
     newList.insert(newList.begin(), arraySquared);
-    return 0;
+    return arraySquared;
 }
 
 int main(){
-    int indexTwo = 0;
-    for(int indexOne = 0; indexOne <5; indexOne++){
-        int result = sumArrayElements(indexOne, indexTwo);
-        squareSum(result);
-        cout << squareSum << endl;
+    for(int indexTwo = 0; indexTwo <5; indexTwo++){
+        for(int indexOne = 0; indexOne <5; indexOne++){
+            int result = sumArrayElements(indexOne, indexTwo);
+            cout<< result << endl;
+        }
     }
     return 0;
 }
