@@ -16,6 +16,17 @@ int sumArrayElements(int arrayOneElement, int arrayTwoElement){
     return arraySum;
 }
 
+
+int arraySums(int result){
+    for(int indexTwo = 0; indexTwo <5; indexTwo++){
+        for(int indexOne = 0; indexOne <5; indexOne++){
+            result = sumArrayElements(indexOne, indexTwo);
+            cout<< result << endl;
+        }
+    }
+    return result;
+}
+
 int squareSum(int sumOfArray){
     int arraySquared = sumOfArray * sumOfArray;
     newList.insert(newList.begin(), arraySquared);
@@ -23,11 +34,6 @@ int squareSum(int sumOfArray){
 }
 
 int main(){
-    for(int indexTwo = 0; indexTwo <5; indexTwo++){
-        for(int indexOne = 0; indexOne <5; indexOne++){
-            int result = sumArrayElements(indexOne, indexTwo);
-            cout<< result << endl;
-        }
-    }
-    return 0;
+    int result = arraySums(result);
+    squareSum(result);
 }
