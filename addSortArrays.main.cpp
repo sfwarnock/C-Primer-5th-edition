@@ -35,34 +35,10 @@ int arraySums(int result){
     return 0;
 }
 
-int insertVector(int insertElement){
-    int elementToInsert = squareSum(insertElement);
-    //int vectorValue = newList.at(elementToInsert);
-    cout << squareSum(insertElement) << endl;
-    //for(int vectorIndex = 0; vectorIndex >= 0; vectorIndex++){
-            //if (vectorValue == elementToInsert){
-              //  break;
-           // } else {
-                //newList.insert(newList.begin(), elementToInsert);
-                //cout << newList.size() << endl;
-            //}
-    //}
+int cleanAndSortVector(int insertElement){
     return 0;
 }
-// look for dupilcate
-    // sort
-        //insert
-
-
 
 int main(){
     int result = arraySums(result);
 }
-
-//for(int vectorIndex = 0; vectorIndex >= 0; vectorIndex++){
-   // if (vectorValue > elementToInsert){
-        // move one position to the right
-    //} else {
-        // insert
-    //}
-
