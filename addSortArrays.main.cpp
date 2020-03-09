@@ -36,19 +36,19 @@ int arraySums(int result){
     return 0;
 }
 
-int cleanAndSortVector(int insertElement){
-//    int indexOne = 0;
-  //  for(int indexTwo = 0; indexTwo => 1; indexTwo++){
-    //    if(newList.at(indexTwo) > newList.at(indexOne)){
-      //      newList.at(indexOne)
-        //} else{
-          //  indexTwo++;
-        //}
-        //indexOne++;
-    //}
+int cleanAndSortVector(){
+    int indexOne = 0;
+    for(int indexTwo = 0; indexTwo < 1; indexTwo++){
+        if(newList.at(indexTwo) > newList.at(indexOne)){
+            newList.at(indexOne++);
+        } else{
+            indexTwo++;
+        }
+        indexOne++;
+    }
     return 0;
 }
 
 int main(){
-    int result = arraySums(result);
+    int result = cleanAndSortVector();
 }
