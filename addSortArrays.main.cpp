@@ -26,11 +26,12 @@ int arraySums(int result){
         for(int indexOne = 0; indexOne <5; indexOne++){
             result = sumArrayElements(indexOne, indexTwo);
             int squareResult = squareSum(result);
-            cout << squareResult << endl;
             newList.insert(newList.begin(), squareResult);
         }
     }
     cout << newList.size() << endl;
+    cout << newList.front() << endl;
+    cout << newList.back() << endl;
     return 0;
 }
 
