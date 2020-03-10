@@ -9,7 +9,7 @@ using namespace std;
 
 int arrayOne [5] = {2, 4, 6, 8, 10};
 int arrayTwo [5] = {1, 3, 5, 7, 9};
-vector<int> newList;
+vector<int> summedArrays;
 
 int sumArrayElements(int arrayOneElement, int arrayTwoElement){
     int arraySum = arrayOne[arrayOneElement] + arrayTwo[arrayTwoElement];
@@ -26,21 +26,23 @@ int arraySums(int result){
         for(int indexOne = 0; indexOne <5; indexOne++){
             result = sumArrayElements(indexOne, indexTwo);
             int squareResult = squareSum(result);
-            newList.insert(newList.begin(), squareResult);
+            summedArrays.insert(summedArrays.begin(), squareResult);
         }
     }
-    cout << newList.size() << endl;
-    cout << newList.front() << endl;
-    cout << newList.back() << endl;
-    cout << newList.at(2) << endl;
+    cout << summedArrays.size() << endl;
+    cout << summedArrays.front() << endl;
+    cout << summedArrays.back() << endl;
+    cout << summedArrays.at(2) << endl;
+    
     return 0;
 }
 
 int cleanAndSortVector(){
-    cout << newList.size() << endl;
+    cout << summedArrays.size() << endl;
     return 0;
 }
 
 int main(){
-    int result = cleanAndSortVector();
+    int result = arraySums(result);
+    int resul2 = cleanAndSortVector();
 }
