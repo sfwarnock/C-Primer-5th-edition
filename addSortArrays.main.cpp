@@ -38,12 +38,16 @@ int arraySums(int result){
 
 int cleanAndSortVector(){
     int vectorSize = summedArrays.size();
+    int vectorIndexOne = 0;
+    int vectorIndexTwo = 1;
 
-    if(summedArrays.at(0) >= summedArrays.at(24)){
-        cout << "The lesser " << summedArrays.at(0) << endl;
+    if(summedArrays.at(vectorIndexOne) >= summedArrays.at(vectorIndexTwo)){
+        cout << "The lesser " << summedArrays.at(vectorIndexOne) << endl;
     } else {
-        cout << "The greater" << summedArrays.at(24) << endl;
+        cout << "The greater" << summedArrays.at(vectorIndexTwo) << endl;
     }
+    cout << summedArrays.at(vectorIndexOne) << endl;
+    cout<< summedArrays.at(vectorIndexTwo) << endl;
     cout << vectorSize << endl;
     return 0;
 }
