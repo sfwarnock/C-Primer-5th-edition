@@ -32,20 +32,12 @@ int arraySums(int result){
     cout << newList.size() << endl;
     cout << newList.front() << endl;
     cout << newList.back() << endl;
-    cout << newList.at(2) <<endl;
+    cout << newList.at(2) << endl;
     return 0;
 }
 
 int cleanAndSortVector(){
-    int indexOne = 0;
-    for(int indexTwo = 0; indexTwo < 1; indexTwo++){
-        if(newList.at(indexTwo) > newList.at(indexOne)){
-            newList.at(indexOne++);
-        } else{
-            indexTwo++;
-        }
-        indexOne++;
-    }
+    cout << newList.size() << endl;
     return 0;
 }
 
