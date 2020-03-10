@@ -29,16 +29,22 @@ int arraySums(int result){
             summedArrays.insert(summedArrays.begin(), squareResult);
         }
     }
-    cout << summedArrays.size() << endl;
-    cout << summedArrays.front() << endl;
-    cout << summedArrays.back() << endl;
-    cout << summedArrays.at(2) << endl;
-    
+    //cout << summedArrays.size() << endl;
+    //cout << summedArrays.front() << endl;
+    //cout << summedArrays.back() << endl;
+    //cout << summedArrays.at(2) << endl;
     return 0;
 }
 
 int cleanAndSortVector(){
-    cout << summedArrays.size() << endl;
+    int vectorSize = summedArrays.size();
+
+    if(summedArrays.at(0) >= summedArrays.at(24)){
+        cout << "The lesser " << summedArrays.at(0) << endl;
+    } else {
+        cout << "The greater" << summedArrays.at(24) << endl;
+    }
+    cout << vectorSize << endl;
     return 0;
 }
 
