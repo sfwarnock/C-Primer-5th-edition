@@ -29,10 +29,6 @@ int arraySums(int result){
             summedArrays.insert(summedArrays.begin(), squareResult);
         }
     }
-    //cout << summedArrays.size() << endl;
-    //cout << summedArrays.front() << endl;
-    //cout << summedArrays.back() << endl;
-    //cout << summedArrays.at(2) << endl;
     return 0;
 }
 
@@ -42,14 +38,18 @@ int cleanAndSortVector(){
     cout << summedArrays.at(0) << endl;
     cout << summedArrays.at(1) << endl;
     int vectorIndexTwo = 1;
+    
     for(int vectorIndexOne = 0; vectorIndexOne == vectorSizeStart; vectorIndexOne++){
-        if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
-            summedArrays.erase(summedArrays.begin(), summedArrays.begin()+vectorIndexTwo);
-            cout << summedArrays.at(vectorIndexOne) << endl;
-            cout << "Loop executed" << endl;
-        }
-        
+        cout << summedArrays.at(vectorIndexOne) << endl;
+        //if(summedArrays.at(vectorIndexOne) =! summedArrays.at(vectorIndexTwo)){
+          //  cout << "If executed" <<endl;
+        //} else {
+          //  vectorIndexTwo++;
+            //cout << "Else executed" << endl;
+        //}
+        vectorIndexTwo++;
     }
+    
     
     int vectorSizeClean = summedArrays.size();
     cout << vectorSizeClean << endl;
