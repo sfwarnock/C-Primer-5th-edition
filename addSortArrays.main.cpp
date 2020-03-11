@@ -45,11 +45,12 @@ int cleanAndSortVector(){
     for(int vectorIndexOne = 0; vectorIndexOne == vectorSizeStart; vectorIndexOne++){
         if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
             summedArrays.erase(summedArrays.begin(), summedArrays.begin()+vectorIndexTwo);
+            cout << summedArrays.at(vectorIndexOne) << endl;
         }
     }
     
     int vectorSizeClean = summedArrays.size();
-    //cout << vectorSizeClean << endl;
+    cout << vectorSizeClean << endl;
     return 0;
 }
 
