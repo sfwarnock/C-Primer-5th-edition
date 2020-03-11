@@ -34,22 +34,17 @@ int arraySums(int result){
 
 int cleanAndSortVector(){
     int vectorSizeStart = summedArrays.size();
-    cout << vectorSizeStart << endl;
-    cout << summedArrays.at(0) << endl;
-    cout << summedArrays.at(1) << endl;
-    int vectorIndexTwo = 1;
-    
-    for(int vectorIndexOne = 0; vectorIndexOne == vectorSizeStart; vectorIndexOne++){
-        cout << summedArrays.at(vectorIndexOne) << endl;
-        //if(summedArrays.at(vectorIndexOne) =! summedArrays.at(vectorIndexTwo)){
-          //  cout << "If executed" <<endl;
-        //} else {
-          //  vectorIndexTwo++;
-            //cout << "Else executed" << endl;
-        //}
-        vectorIndexTwo++;
+
+    for(int vectorIndexOne = 0; vectorIndexOne < vectorSizeStart; vectorIndexOne++){
+        for(int vectorIndexTwo = 1; vectorIndexTwo < vectorSizeStart; vectorIndexTwo++){
+            if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
+                cout << "If executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
+                //summedArrays.erase(summedArrays.begin(), summedArrays.begin() +vectorIndexTwo);
+            } else {
+                cout << "Else executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
+            }
+        }
     }
-    
     
     int vectorSizeClean = summedArrays.size();
     cout << vectorSizeClean << endl;
