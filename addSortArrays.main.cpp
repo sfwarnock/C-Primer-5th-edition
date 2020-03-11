@@ -37,18 +37,19 @@ int arraySums(int result){
 }
 
 int cleanAndSortVector(){
-    int vectorSize = summedArrays.size();
-    int vectorIndexOne = 0;
+    int vectorSizeStart = summedArrays.size();
+    cout << vectorSizeStart << endl;
     int vectorIndexTwo = 1;
-
-    if(summedArrays.at(vectorIndexOne) >= summedArrays.at(vectorIndexTwo)){
-        cout << "The lesser " << summedArrays.at(vectorIndexOne) << endl;
-    } else {
-        cout << "The greater" << summedArrays.at(vectorIndexTwo) << endl;
+    for(int vectorIndexOne = 0; vectorIndexOne == vectorSizeStart; vectorIndexOne++){
+        if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
+            summedArrays.erase(vectorIndexTwo);
+        } else {
+            vectorIndexTwo++;
+        }
     }
-    cout << summedArrays.at(vectorIndexOne) << endl;
-    cout<< summedArrays.at(vectorIndexTwo) << endl;
-    cout << vectorSize << endl;
+    
+    int vectorSizeClean = summedArrays.size();
+    cout << vectorSizeClean << endl;
     return 0;
 }
 
