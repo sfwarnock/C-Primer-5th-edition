@@ -46,7 +46,9 @@ int cleanAndSortVector(){
         if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
             summedArrays.erase(summedArrays.begin(), summedArrays.begin()+vectorIndexTwo);
             cout << summedArrays.at(vectorIndexOne) << endl;
+            cout << "Loop executed" << endl;
         }
+        
     }
     
     int vectorSizeClean = summedArrays.size();
