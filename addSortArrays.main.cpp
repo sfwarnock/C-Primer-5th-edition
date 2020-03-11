@@ -42,9 +42,9 @@ int cleanAndSortVector(){
     int vectorIndexTwo = 1;
     for(int vectorIndexOne = 0; vectorIndexOne == vectorSizeStart; vectorIndexOne++){
         if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
-            summedArrays.erase(vectorIndexTwo);
+            cout << summedArrays.at(vectorIndexOne) << endl;
         } else {
-            vectorIndexTwo++;
+            cout << summedArrays.at(vectorIndexOne) << endl;
         }
     }
     
