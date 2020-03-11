@@ -39,17 +39,17 @@ int arraySums(int result){
 int cleanAndSortVector(){
     int vectorSizeStart = summedArrays.size();
     cout << vectorSizeStart << endl;
+    cout << summedArrays.at(0) << endl;
+    cout << summedArrays.at(1) << endl;
     int vectorIndexTwo = 1;
     for(int vectorIndexOne = 0; vectorIndexOne == vectorSizeStart; vectorIndexOne++){
         if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
-            cout << summedArrays.at(vectorIndexOne) << endl;
-        } else {
-            cout << summedArrays.at(vectorIndexOne) << endl;
+            summedArrays.erase(summedArrays.begin(), summedArrays.begin()+vectorIndexTwo);
         }
     }
     
     int vectorSizeClean = summedArrays.size();
-    cout << vectorSizeClean << endl;
+    //cout << vectorSizeClean << endl;
     return 0;
 }
 
