@@ -43,21 +43,22 @@ int cleanAndSortVector(){
         for(int vectorIndexTwo = 1; vectorIndexTwo < vectorSizeStart; vectorIndexTwo++){
             if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
                 cout << "If executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
-                cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexTwo));
                 summedArrays.erase(summedArrays.begin() + vectorIndexTwo);
-                vectorSizeStart --;
+                //vectorSizeStart --;
             } else {
             cout << "Else executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
+                
                 continue;
             }
+        vectorSizeStart --;
         }
-    cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexOne));
-    vectorSizeStart --;
+    //cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexOne));
     }
 
-    int vectorSizeClean = cleanedVector.size();
-    cout << vectorSizeStart << endl;
-    cout << vectorSizeClean << endl;
+    //int vectorSizeClean = cleanedVector.size();
+    int vectorSizeFinish = summedArrays.size();
+    cout << vectorSizeFinish << endl;
+    //cout << vectorSizeClean << endl;
     cout<< "Array Elemenet Zero = " << cleanedVector.at(0) << endl;
     return 0;
 }
