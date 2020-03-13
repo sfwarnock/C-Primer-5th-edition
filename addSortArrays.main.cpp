@@ -35,24 +35,30 @@ int arraySums(int result){
 
 int cleanAndSortVector(){
     int vectorSizeStart = summedArrays.size();
-    cout<< "Array Elemenet 0 - " << summedArrays.at(0) << endl;
+    cout<< "Array Elemenet Zero = " << summedArrays.at(0) << endl;
     cout << vectorSizeStart << endl;
     int vectorIndexOne = 0;
-    for(int vectorIndexTwo = 1; vectorIndexTwo < vectorSizeStart; vectorIndexTwo++){
-        if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
-            cout << "If executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
-            cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexTwo));
-        } else {
-        cout << "Else executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
-            continue;
+        
+    for(vectorIndexOne; vectorIndexOne < vectorSizeStart; vectorIndexOne++){
+        for(int vectorIndexTwo = 1; vectorIndexTwo < vectorSizeStart; vectorIndexTwo++){
+            if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
+                cout << "If executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
+                cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexTwo));
+                summedArrays.erase(summedArrays.begin() + vectorIndexTwo);
+                vectorSizeStart --;
+            } else {
+            cout << "Else executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
+                continue;
+            }
         }
-    }
     cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexOne));
-    //vectorIndexOne++;
-    
+    vectorSizeStart --;
+    }
+
     int vectorSizeClean = cleanedVector.size();
+    cout << vectorSizeStart << endl;
     cout << vectorSizeClean << endl;
-    cout<< "Array Elemenet 0 - " << cleanedVector.at(0) << endl;
+    cout<< "Array Elemenet Zero = " << cleanedVector.at(0) << endl;
     return 0;
 }
 
