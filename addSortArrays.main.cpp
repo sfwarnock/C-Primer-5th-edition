@@ -10,7 +10,7 @@ using namespace std;
 int arrayOne [5] = {2, 4, 6, 8, 10};
 int arrayTwo [5] = {1, 3, 5, 7, 9};
 vector<int> summedArrays;
-vector<int> doubleCount;
+vector<int> cleanedVector;
 
 int sumArrayElements(int arrayOneElement, int arrayTwoElement){
     int arraySum = arrayOne[arrayOneElement] + arrayTwo[arrayTwoElement];
@@ -35,23 +35,24 @@ int arraySums(int result){
 
 int cleanAndSortVector(){
     int vectorSizeStart = summedArrays.size();
+    cout<< "Array Elemenet 0 - " << summedArrays.at(0) << endl;
     cout << vectorSizeStart << endl;
     int vectorIndexOne = 0;
     for(int vectorIndexTwo = 1; vectorIndexTwo < vectorSizeStart; vectorIndexTwo++){
         if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
             cout << "If executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
-            doubleCount.insert(doubleCount.begin(), summedArrays.at(vectorIndexTwo));
-            vectorIndexOne++;
+            cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexTwo));
         } else {
         cout << "Else executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
             continue;
-        }        
+        }
     }
-    doubleCount.insert(doubleCount.begin(), summedArrays.at(vectorIndexOne));
+    cleanedVector.insert(cleanedVector.begin(), summedArrays.at(vectorIndexOne));
     //vectorIndexOne++;
     
-    int vectorSizeClean = doubleCount.size();
+    int vectorSizeClean = cleanedVector.size();
     cout << vectorSizeClean << endl;
+    cout<< "Array Elemenet 0 - " << cleanedVector.at(0) << endl;
     return 0;
 }
 
