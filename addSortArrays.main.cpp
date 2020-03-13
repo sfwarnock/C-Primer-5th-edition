@@ -38,20 +38,17 @@ int cleanAndSortVector(){
     cout << vectorSizeStart << endl;
     int vectorIndexOne = 0;
     for(int vectorIndexTwo = 1; vectorIndexTwo < vectorSizeStart; vectorIndexTwo++){
-        
         if(summedArrays.at(vectorIndexOne) == summedArrays.at(vectorIndexTwo)){
             cout << "If executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
             doubleCount.insert(doubleCount.begin(), summedArrays.at(vectorIndexTwo));
-            //vectorIndexOne++;
+            vectorIndexOne++;
         } else {
         cout << "Else executed " << summedArrays.at(vectorIndexOne) << " " << summedArrays.at(vectorIndexTwo) << endl;
-        //vectorIndexTwo++;
-        }
-        
-    doubleCount.insert(doubleCount.begin(), summedArrays.at(vectorIndexOne));
-    vectorIndexOne++;
+            continue;
+        }        
     }
-    
+    doubleCount.insert(doubleCount.begin(), summedArrays.at(vectorIndexOne));
+    //vectorIndexOne++;
     
     int vectorSizeClean = doubleCount.size();
     cout << vectorSizeClean << endl;
