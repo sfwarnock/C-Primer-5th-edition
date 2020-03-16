@@ -27,21 +27,21 @@ int fillVector(){
 
 int removeDuplicates(){
     int vectorSize = vectorOne.size();
-    cout << vectorSize << endl;
     int indexOne = 0;
     
-    for(int indexTwo = 1; indexTwo == vectorSize; indexTwo++){
-        cout << vectorOne.at(indexOne) << endl;
+    for(int indexTwo = 1; indexTwo <= vectorSize; indexTwo++){
+        //cout << vectorOne.at(indexOne) << endl;
         if(vectorOne.at(indexOne) == vectorOne.at(indexTwo)){
+            cout << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
             vectorOne.erase(vectorOne.begin() + indexTwo);
-            indexTwo++;
-            cout << indexTwo << "Removed from Vector" << endl;
+            //indexTwo++;
+            cout << "If Executed" << indexTwo << "Removed from Vector" << endl;
         } else{
-            cout << "Else excuted" << endl;
+            cout << "Else excuted " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
         }
-    vectorSize --;
     }
-    cout << "Test" << endl;
+    vectorSize --;
+    cout << vectorSize << endl;
     return 0;
 }
 
