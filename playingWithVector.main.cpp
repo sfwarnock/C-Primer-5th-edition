@@ -27,15 +27,21 @@ int fillVector(){
 
 int removeDuplicates(){
     int vectorSize = vectorOne.size();
-    int indexTwo = 1;
-    for(int indexOne = 0; indexOne <= vectorSize; indexOne++){
+    cout << vectorSize << endl;
+    int indexOne = 0;
+    
+    for(int indexTwo = 1; indexTwo == vectorSize; indexTwo++){
+        cout << vectorOne.at(indexOne) << endl;
         if(vectorOne.at(indexOne) == vectorOne.at(indexTwo)){
             vectorOne.erase(vectorOne.begin() + indexTwo);
             indexTwo++;
             cout << indexTwo << "Removed from Vector" << endl;
+        } else{
+            cout << "Else excuted" << endl;
         }
     vectorSize --;
     }
+    cout << "Test" << endl;
     return 0;
 }
 
@@ -45,5 +51,6 @@ int sortVector(){
 }
 
 int main (){
+    fillVector();
     removeDuplicates();
 }
