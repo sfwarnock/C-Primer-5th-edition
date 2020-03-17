@@ -18,7 +18,8 @@ int arrayOne[] = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 
 int fillVector(){
     int indexOne = 0;
     while(indexOne < 25){
-        vectorOne.insert(vectorOne.end(), indexOne);
+        vectorOne.insert(vectorOne.end(), arrayOne[indexOne]);
+        //cout << vectorOne.at(indexOne) << " " << indexOne << endl;
         indexOne++;
     }
     cout << vectorOne.size() << endl;
@@ -26,22 +27,7 @@ int fillVector(){
 }
 
 int removeDuplicates(){
-    int vectorSize = vectorOne.size();
-    int indexOne = 0;
-    
-    for(int indexTwo = 1; indexTwo <= vectorSize; indexTwo++){
-        //cout << vectorOne.at(indexOne) << endl;
-        if(vectorOne.at(indexOne) == vectorOne.at(indexTwo)){
-            cout << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
-            vectorOne.erase(vectorOne.begin() + indexTwo);
-            //indexTwo++;
-            cout << "If Executed" << indexTwo << "Removed from Vector" << endl;
-        } else{
-            cout << "Else excuted " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
-        }
-    }
-    vectorSize --;
-    cout << vectorSize << endl;
+    //int vectorSize = vectorOne.size();
     return 0;
 }
 
