@@ -30,10 +30,10 @@ int removeDuplicates(){
     int vectorSize = vectorOne.size();
     cout << vectorSize << endl;
 
-    for(int indexOne = 0; indexOne < 25; indexOne++){
-        for(int indexTwo = 1; indexTwo < 25; indexTwo++){
-            cout << "Starting Point " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
-            if(vectorOne.at(indexOne) == vectorOne.at(indexTwo)){
+    for(int indexOne = 0; indexOne < 25; indexOne ++){
+        for(int indexTwo = 0; indexTwo < 25; indexTwo++){
+            //cout << "Starting Point " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
+            if(vectorOne.at(indexOne) == vectorOne.at(indexTwo) && indexOne != indexTwo){
                 cout << "If " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
                 //vectorOne.erase(vectorOne.begin() + vectorOne.at(indexTwo));
                 //vectorSize --;
@@ -44,8 +44,6 @@ int removeDuplicates(){
         }
         //indexOne ++;
     }
-    
-
     cout << vectorSize << endl;
     return 0;
 }
