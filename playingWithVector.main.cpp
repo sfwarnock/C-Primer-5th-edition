@@ -29,23 +29,22 @@ int fillVector(){
 }
 
 int removeDuplicates(){
-    int vectorSize = vectorOne.size();
-    int vectorCleanSize = vectorClean.size();
-    cout << vectorSize << endl;
 
-    for(int indexOne = 0; indexOne < vectorSize; indexOne ++){
-        for(int indexTwo = 0; indexTwo < vectorSize; indexTwo++){
+    for(int indexOne = 0; indexOne < vectorOne.size(); indexOne ++){
+        for(int indexTwo = 0; indexTwo < vectorOne.size(); indexTwo++){
+            
             if(vectorOne.at(indexOne) == vectorOne.at(indexTwo) && indexOne != indexTwo){
                 cout << "If " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
+            
             } else {
                 cout << "Else " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
+            
             }
         }
+        
         cout << " " << endl;
     }
-    cout << vectorCleanSize << endl;
-    //cout << vectorSize << endl;
-    
+    //cout << vectorCleanSize << endl;
     return 0;
 }
 
