@@ -12,6 +12,7 @@
 using namespace std;
 
 vector<int> vectorOne;
+vector<int> vectorClean;
 int arrayOne[] = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
 //int arraySize = arrayOne.size();
 
@@ -19,7 +20,6 @@ int fillVector(){
     int indexOne = 0;
     while(indexOne < 25){
         vectorOne.insert(vectorOne.end(), arrayOne[indexOne]);
-        //cout << vectorOne.at(indexOne) << " " << indexOne << endl;
         indexOne++;
     }
     cout << vectorOne.size() << endl;
@@ -28,23 +28,23 @@ int fillVector(){
 
 int removeDuplicates(){
     int vectorSize = vectorOne.size();
+    int vectorCleanSize = vectorClean.size();
     cout << vectorSize << endl;
 
     for(int indexOne = 0; indexOne < 25; indexOne ++){
-        for(int indexTwo = 0; indexTwo < 25; indexTwo++){
-            //cout << "Starting Point " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
-            if(vectorOne.at(indexOne) == vectorOne.at(indexTwo) && indexOne != indexTwo){
+        for(int indexTwo = 0; indexTwo <25; indexTwo++){
+            if(vectorOne.at(indexOne) != vectorOne.at(indexTwo) && indexOne != indexTwo){
                 cout << "If " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
-                //vectorOne.erase(vectorOne.begin() + vectorOne.at(indexTwo));
                 //vectorSize --;
             } else {
                 cout << "Else " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
                 //continue;
             }
         }
-        //indexOne ++;
     }
-    cout << vectorSize << endl;
+    cout << vectorCleanSize << endl;
+    //cout << vectorSize << endl;
+    
     return 0;
 }
 
