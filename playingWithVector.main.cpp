@@ -24,10 +24,6 @@ int fillVector(){
         vectorOne.insert(vectorOne.end(), arrayOne[indexOne]);
         indexOne++;
     }
-    
-    //int vectorSizeStart = vectorOne.size();
-    //cout << "Initial Vector size: " << vectorSizeStart << endl;
-    
     return 0;
 }
 
@@ -36,7 +32,6 @@ int removeDuplicates(){
     fillVector();
     int vectorSizeStart = vectorOne.size();
     int removedElementsCount = 0;
-    int vectorSizeFinish;
     
     for(int indexOne = 0; indexOne < vectorOne.size(); ++ indexOne){
         for(int indexTwo = 0; indexTwo < vectorOne.size(); ++ indexTwo){
@@ -49,14 +44,16 @@ int removeDuplicates(){
         }
     }
     
-    vectorSizeFinish = vectorOne.size();
-    
+    int vectorSizeFinish = vectorOne.size();
     int removeDuplicatesAssert = removedElementsCount + vectorSizeFinish;
     
-    cout << "Vector Size Start: " << vectorSizeStart << endl;
-    cout << "Removed Elements: " << removedElementsCount << endl;
-    cout << "Cleaned Vector Size: " << vectorSizeFinish << endl;
-    cout << removeDuplicatesAssert << endl;
+    if (removeDuplicatesAssert == vectorSizeStart){
+        cout << "Vector Size Start: " << vectorSizeStart << endl;
+        cout << "Removed Elements: " << removedElementsCount << endl;
+        cout << "Cleaned Vector Size: " << vectorSizeFinish << endl;
+    } else {
+        cout << "Assert Error, remove duplicates from vector failed." << endl;
+    }
     return 0;
 }
 
