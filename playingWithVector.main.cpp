@@ -26,12 +26,14 @@ int fillVector(){
     }
     
     int vectorSizeStart = vectorOne.size();
-    cout << vectorSizeStart << endl;
+    cout << "Initial Vector size: " << vectorSizeStart << endl;
     
     return vectorSizeStart;
 }
 
+
 int removeDuplicates(){
+    fillVector();
     int removedElementsCount = 0;
     int vectorSizeFinish;
     
@@ -46,10 +48,13 @@ int removeDuplicates(){
         }
     }
     
-    cout << removedElementsCount << endl;
-    cout << vectorOne.size() << endl;
-    return 0;
+    vectorSizeFinish = vectorOne.size();
+    
+    cout << "Removed Elements: " << removedElementsCount << endl;
+    cout << "Cleaned Vector Size: " << vectorSizeFinish << endl;
+    return removedElementsCount;
 }
+
 
 int vectorCleanAssert(){
     
@@ -57,12 +62,14 @@ int vectorCleanAssert(){
     
 }
 
+
 int sortVector(){
     
     return 0;
 }
 
+
 int main (){
-    fillVector();
+    //fillVector();
     removeDuplicates();
 }
