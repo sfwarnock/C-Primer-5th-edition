@@ -29,29 +29,28 @@ int fillVector(){
 }
 
 int removeDuplicates(){
-
+    int removedElementsCount = 0;
+    
     for(int indexOne = 0; indexOne < vectorOne.size(); ++ indexOne){
         for(int indexTwo = 0; indexTwo < vectorOne.size(); ++ indexTwo){
-
+            
             if(vectorOne.at(indexOne) == vectorOne.at(indexTwo) and indexOne != indexTwo){
-                cout << "If " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
-                vectorOne.erase(vectorOne.begin() + (indexTwo - 2));
-            
-            } else {
-                cout << "Else " << vectorOne.at(indexOne) << " " << vectorOne.at(indexTwo) << endl;
-            
+                vectorOne.erase(vectorOne.begin() + indexTwo);
+                ++ removedElementsCount;
             }
             
         }
-        //cout << "Exit loop two" << endl;
-        cout << " " << endl;
-        //cout << vectorOne.size() << endl;
     }
-    //cout << "Exit loop one" << endl;
-    //cout << vectorCleanSize << endl;
+    cout << removedElementsCount << endl;
+    cout << vectorOne.size() << endl;
     return 0;
 }
 
+int vectorCleanAssert(){
+    
+    return 0;
+    
+}
 
 int sortVector(){
     
