@@ -54,7 +54,7 @@ int removeDuplicates(){
         cout << "Cleaned Vector Size: " << vectorSizeFinish << endl;
         cout << " " << endl;
     } else {
-        cout << "Assert Error: remove duplicates from vector failed." << endl;
+        cout << "Assert Error: removeDuplicates() from vector failed." << endl;
     }
     return 0;
 }
@@ -62,23 +62,15 @@ int removeDuplicates(){
 
 int sortVector(){
     removeDuplicates();
+
     int indexOne = 0;
     int indexTwo = indexOne + 1;
     
-    int swapElementOne = vectorOne.at(indexOne);
-    int swapElementTwo = vectorOne.at(indexTwo);
-    
-    cout << swapElementOne << ", " << swapElementTwo << endl;
-    
-    if (swapElementOne > swapElementTwo){
-        indexOne = indexTwo;
-        indexTwo = indexTwo - 1;
-        cout << indexOne << " " << indexTwo << endl;
-        
-         cout << swapElementOne << ", " << swapElementTwo << endl;
+    if (vectorOne.at(indexOne) < vectorOne.at(indexTwo)){
+        vectorOne.insert(vectorOne.begin(), vectorOne.at(indexTwo));
     }
-
-    for (indexOne = 0; indexOne < vectorOne.size(); ++indexOne){
+    
+    for (int indexOne = 0; indexOne < vectorOne.size(); ++indexOne){
         cout << vectorOne.at(indexOne) << ", ";
         }
     cout << " " << endl;
