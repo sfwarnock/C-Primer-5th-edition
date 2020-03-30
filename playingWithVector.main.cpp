@@ -61,6 +61,7 @@ int removeDuplicates(){
 
 
 int sortVector(){
+    removeDuplicates();
     int indexOne = 0;
     int indexTwo = indexOne + 1;
     
@@ -88,7 +89,6 @@ int sortVector(){
 
 int main (){
     
-    removeDuplicates();
     sortVector();
     
 }
