@@ -31,7 +31,7 @@ int fillVector(){
 
 int removeDuplicates(){
     fillVector();
-    int vectorSizeStart = vectorOne.size();
+    long vectorSizeStart = vectorOne.size();
     int removedElementsCount = 0;
     
     for(int indexOne = 0; indexOne < vectorOne.size(); ++ indexOne){
@@ -45,8 +45,8 @@ int removeDuplicates(){
         }
     }
     
-    int vectorSizeFinish = vectorOne.size();
-    int removeDuplicatesAssert = removedElementsCount + vectorSizeFinish;
+    long vectorSizeFinish = vectorOne.size();
+    long removeDuplicatesAssert = removedElementsCount + vectorSizeFinish;
     
     if (removeDuplicatesAssert == vectorSizeStart){
         cout << "Vector Size Start: " << vectorSizeStart << endl;
